@@ -19,7 +19,12 @@ public class SumOfInput
     }
     
     public Integer oneToNumber(Integer numberToSum){
-
+        //formula to add up even numbers
+        sum = ((numberToSum+1)*(numberToSum/2));
+        //if statement to catch odd numbers
+        if (numberToSum%2==1){
+        sum+=(numberToSum/2)+1;
+        }
         return sum;
     }
 
